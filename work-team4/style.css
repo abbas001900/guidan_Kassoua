@@ -1,0 +1,189 @@
+/* --- VARIABLES DE COULEURS B2B --- */
+:root {
+    --bleu-nuit: #0E1E40; /* Couleur principale de la marque (Professionnel/Sobriété) */
+    --or-pale: #B8860B;   /* Couleur d'accentuation (Luxe/Élégance) */
+    --blanc-casse: #F8F8F8; /* Fond clair */
+    --gris-bordure: #E0E0E0;
+}
+
+/* --- STYLES GÉNÉRAUX --- */
+body {
+    font-family: 'Arial', sans-serif; /* Police de base professionnelle */
+    margin: 0;
+    background-color: var(--blanc-casse);
+    color: #333;
+}
+
+/* --- HEADER --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo h1 {
+    color: var(--bleu-nuit);
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.slogan-header {
+    display: block;
+    font-size: 0.75em;
+    color: var(--or-pale);
+    margin-top: -5px;
+}
+
+.header-nav a {
+    color: var(--bleu-nuit);
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.cta-link { 
+    border-color: var(--bleu-nuit);
+    font-weight: bold;
+}
+
+.cta-link:hover {
+    background-color: var(--bleu-nuit);
+    color: white;
+}
+
+/* --- MAIN / ARRIÈRE-PLAN AVEC IMAGE --- */
+.main-content {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-background {
+    /* SIMULATION DE L'IMAGE DE FOND avec un filtre sombre pour que le texte ressorte */
+    background-image: linear-gradient(rgba(14, 30, 64, 0.7), rgba(14, 30, 64, 0.7)), url('images/bg-artisanat.jpg'); 
+    /* !!! une image de qualité nommée 'bg-artisanat.jpg' !!! */
+    background-attachment: fixed; /* Rendre l'image fixe pour un meilleur effet */
+}
+
+.main-ecrit {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.main-ecrit h2 {
+    font-size: 2.2em;
+    color: var(--or-pale);
+}
+
+/* --- FORMULAIRE CENTRÉ --- */
+.auth-form-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Ombre élégante */
+    max-width: 400px;
+    width: 100%;
+}
+
+.auth-form h3 {
+    text-align: center;
+    color: var(--bleu-nuit);
+    margin-top: 0;
+}
+
+.auth-form input, .auth-form select, .btn-b2b {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--gris-bordure);
+    border-radius: 4px;
+    box-sizing: border-box; /* Assure que padding n'augmente pas la largeur */
+}
+
+.auth-form select {
+    appearance: none; /* Look plus propre pour le B2B */
+}
+
+.btn-b2b {
+    background-color: var(--bleu-nuit);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-b2b:hover {
+    background-color: var(--or-pale);
+}
+
+.auth-switch a {
+    color: var(--or-pale);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- FOOTER (Uniforme) --- */
+footer {
+    background-color: var(--bleu-nuit);
+    color: white;
+}
+
+.footer-line-one {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 15px 30px; 
+    padding: 20px 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-line-one a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.footer-line-one a:hover {
+    color: var(--or-pale);
+}
+
+.footer-barre {
+    text-align: center;
+    padding: 10px 5%;
+    font-size: 0.8em;
+}
+
+/* --- RESPONSIVE DESIGN (Crucial pour le hackathon) --- */
+@media (max-width: 650px) {
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-nav {
+        margin-top: 10px;
+    }
+    
+    .header-nav a {
+        margin: 0 5px;
+    }
+    
+    .footer-line-one {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
