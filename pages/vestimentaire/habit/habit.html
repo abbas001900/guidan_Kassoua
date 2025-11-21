@@ -4,489 +4,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist</title>
+    <title>Habits Traditionnels - Vestimentaire</title>
 
     <link rel="stylesheet" href="../../style/styles.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
 <body>
 
-    <!-- HEADER / NAVBAR -->
-    <header class="navbar">
-        <div class="navbarContainer">
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="../habit/habit.html">Habits</a></li>
-                    <li><a href="../accessoir/accessoir.html">Acessoirs</a></li>
-                    <li><a href="../chaussure/chaussure.html">Chaussures</a></li>
-                </ul>
-            </nav>
+    <header class="site-header">
+        <div class="u-container">
+            <div class="header__content">
+                <div class="site-logo">
+                    <div class="site-logo__icon"> <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="site-logo__text">
+                        <h1>AgroStyle</h1>
+                        <p>Élégance Naturelle & Authentique</p>
+                    </div>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../../accueil.html" class="main-nav__link">Accueil</a></li>
+                        <li><a href="../../index.html" class="main-nav__link main-nav__link--active">Produits</a></li>
+                        <li><a href="../../../nouveautes.html" class="main-nav__link">Nouveautés</a></li>
+                        <li><a href="../../../apropos.html" class="main-nav__link">À propos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__action-buttons">
+                    <a href="notification.html" class="action-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="action-btn__badge">3</span>
+                    </a>
+                    <a href="./panier/panier.html" class="action-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="../index.html" class="action-btn--login">
+                        <i class="fas fa-user"></i>
+                        Connexion
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
+    <section class="filter-section" aria-labelledby="main-product-title">
+        <div class="u-container">
+            <h2 id="main-product-title" class="filter-section__title">Nos Produits</h2>
+            <div class="filter-options">
+                <div class="search-bar">
+                    <input type="search" placeholder="Rechercher un produit..." aria-label="Rechercher un produit">
+                    <button class="search-bar__btn" aria-label="Lancer la recherche"><i
+                            class="fas fa-search"></i></button>
+                </div>
+                <nav class="category-filters">
+                    <a href="../../../index.html" class="filter-btn">Tous</a>
+                    <a href="../../leg_cereales/leg_cereales.html" class="filter-btn">Produits Agricoles</a>
+                    <a href="../vestimentaire.html" class="filter-btn filter-btn--active">Vestimentaire</a> <a
+                        href="../Art_decoration/decore.html" class="filter-btn">Art et Décoration</a>
+                    <a href="../../Cosmétique/cosmetique.html" class="filter-btn">Cosmétiques</a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-    <!-- HEADER / NAVBARhabit -->
-    <header class="navbarH">
-        <div class="navbarContainer">
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="">Bazin</a></li>
-                    <li><a href="#">Wax(Pagne)</a></li>
-                    <li><a href="#">brocard</a></li>
-                    <li><a href="#">Lépi</a></li>
-                    <li><a href="#">Kenté</a></li>
-                    <li><a href="#">Derby</a></li>
-                    <li><a href="#">Ankara</a></li>
-                    <li><a href="#">Dentelle</a></li>
+    <nav class="subnav-section">
+        <div class="u-container">
+            <nav class="sub-nav">
+                <ul class="sub-nav__list">
+                    <li><a href="habit.html" class="sub-nav__link sub-nav__link--active">Habits</a></li>
+                    <li><a href="../accessoir/accessoir.html" class="sub-nav__link">Accessoires</a></li>
+                    <li><a href="../chaussure/chaussure.html" class="sub-nav__link">Chaussures</a></li>
+                </ul>
+            </nav>
+
+            <nav class="sub-nav sub-nav--category-filters">
+                <ul class="sub-nav__list">
+                    <li><a href="#" class="sub-nav__link">Bazin</a></li>
+                    <li><a href="#" class="sub-nav__link">Wax (Pagne)</a></li>
+                    <li><a href="#" class="sub-nav__link">Brocard</a></li>
+                    <li><a href="#" class="sub-nav__link">Lépi</a></li>
+                    <li><a href="#" class="sub-nav__link">Kenté</a></li>
+                    <li><a href="#" class="sub-nav__link">Derby</a></li>
+                    <li><a href="#" class="sub-nav__link">Ankara</a></li>
+                    <li><a href="#" class="sub-nav__link">Dentelle</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
 
-        <!-- SECTION 1 : TOP PRODUITS -->
-        <section aria-labelledby="top-produits">
-            <div class="section-title">
-                <span id="top-produits">Top Produits</span>
-                <a href="#" class="see-all">Voir Plus</a>
+    <main class="u-container product-main">
+        <section aria-labelledby="top-produits-titre" class="product-list-section">
+            <div class="section-header">
+                <h2 id="top-produits-titre" class="section-header__title">Top Produits</h2> <a href="#"
+                    class="section-header__see-all-link">Voir Plus</a>
             </div>
 
-            <div class="wishlist-grid">
-
-                <!-- PRODUCT CARD -->
+            <div class="product-grid">
                 <article class="product-card">
-                    <div class="product-image">
-                        <span class="discount-badge">-38%</span>
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img1.jpeg" alt="Chaussures en cuir haute qualité">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Paire en cuir de haute Qualité</h3>
-
-                        <div class="product-price">
-                            <span class="current-price">9600fcfa</span>
-                            <span class="old-price">11600fcfa</span>
-                        </div>
+                    <figure class="product-card__image"> <span class="product-card__badge">-38%</span> <img
+                            src="image-habit/img2.jpeg" alt="Pagne traditionnel Wax">
+                        <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Ajouter
+                            au panier</button>
+                    </figure>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Pagne Traditionnel Wax</h3>
+                        <div class="product-card__price"> <span class="product-card__price--current">9600 fcfa</span>
+                            <span class="product-card__price--old">11600 fcfa</span> </div>
+                        <div class="product-card__rating">★★★★★ (65)</div>
                     </div>
                 </article>
 
-                <!-- PRODUCT CARD -->
                 <article class="product-card">
-                    <div class="product-image">
-                        <span class="discount-badge">-36%</span>
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img2.jpeg" alt="Pagne traditionnel">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Pagne Traditionnel</h3>
-
-                        <div class="product-price">
-                            <span class="current-price">9600fcfa</span>
-                            <span class="old-price">11600fcfa</span>
+                    <figure class="product-card__image">
+                        <span class="product-card__badge">-36%</span>
+                        <img src="image-habit/img3.jpeg" alt="Tissu Bazin brodé">
+                        <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Ajouter
+                            au panier</button>
+                    </figure>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Tissu Bazin brodé</h3>
+                        <div class="product-card__price">
+                            <span class="product-card__price--current">15000 fcfa</span>
+                            <span class="product-card__price--old">20000 fcfa</span>
                         </div>
-
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <!-- PRODUCT CARD -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img40.jpeg" alt="Bague en argent pure">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Bague en Argent pur</h3>
-
-                        <div class="product-price">
-                            <span class="current-price">19600fcfa</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- PRODUCT CARD -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img37.jpeg" alt="Tabouret en cuir 100%">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Tabouret en Cuir 100%</h3>
-
-                        <div class="product-price">
-                            <span class="current-price">11600fcfa</span>
-                        </div>
-
-                        <div class="rating">★★★★★ (65)</div>
+                        <div class="product-card__rating">★★★★★ (40)</div>
                     </div>
                 </article>
 
             </div>
         </section>
 
-        <!-- SECTION 2 : RECOMMANDATIONS -->
-        <section aria-labelledby="recommendations" class="just-for-you">
-            <div class="section-title">
-                <span id="recommendations">Recommendations</span>
-                <a href="#" class="see-all">Voir Plus</a>
+        <section aria-labelledby="recommendations-titre" class="product-list-section">
+            <div class="section-header">
+                <h2 id="recommendations-titre" class="section-header__title">Recommendations</h2>
+                <a href="#" class="section-header__see-all-link">Voir Plus</a>
             </div>
 
-            <div class="wishlist-grid">
-
+            <div class="product-grid">
                 <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img33.jpeg"
-                            alt="Pot de fleur décoratif">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Pot de fleur pour décorations</h3>
-                        <div class="product-price"><span class="current-price">5500fcfa</span></div>
+                    <figure class="product-card__image">
+                        <img src="image-habit/img10.jpeg" alt="Vêtement Lépi traditionnel">
+                        <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Ajouter
+                            au panier</button>
+                    </figure>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Robe Traditionnelle Lépi</h3>
+                        <div class="product-card__price"><span class="product-card__price--current">18500 fcfa</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img17.jpeg" alt="Croix d'Agadez en argent">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Croix d'Agadez en Argent pur</h3>
-                        <div class="product-price"><span class="current-price">5600fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img10.jpeg" alt="Calebasse et tapis artistique">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Calebasse et Tapis Artistique</h3>
-                        <div class="product-price"><span class="current-price">7500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img5.jpeg" alt="Statue décorative">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Statue décorative</h3>
-                        <div class="product-price"><span class="current-price">2000fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
+                    <figure class="product-card__image">
+                        <img src="image-habit/img17.jpeg" alt="Tissu Kente tissé main">
+                        <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Ajouter
+                            au panier</button>
+                    </figure>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Tissu Kenté Premium</h3>
+                        <div class="product-card__price"><span class="product-card__price--current">25000 fcfa</span>
+                        </div>
+                        <div class="product-card__rating">★★★★★ (65)</div>
                     </div>
                 </article>
 
             </div>
         </section>
 
-        <!-- SECTION 3 : TOUT -->
-        <section aria-labelledby="tout" class="just-for-you">
-            <div class="section-title">
-                <span id="tout">Tout</span>
-                <form action="#" id="rechercheNotifications">
-                    <fieldset>
-                        <legend>Date d'ajout :</legend>
-                        <select class="rechercheNotificationButton">
+        <section aria-labelledby="tout-titre" class="product-list-section">
+            <div class="section-header section-header--with-form">
+                <h2 id="tout-titre" class="section-header__title">Tout</h2>
+
+                <form action="#" id="product-filters" class="section-header__filter-form">
+                    <fieldset class="filter-group">
+                        <legend class="filter-group__legend">Date d'ajout :</legend> <select
+                            class="filter-group__select">
                             <option value="toutes">Toutes</option>
+                            <option value="recent">Plus récent</option>
+                            <option value="ancien">Plus ancien</option>
                         </select>
                     </fieldset>
-                    <fieldset>
-                        <legend>Prix :</legend>
-                        <select class="rechercheNotificationButton">
+                    <fieldset class="filter-group">
+                        <legend class="filter-group__legend">Prix :</legend>
+                        <select class="filter-group__select">
                             <option value="toutes">Toutes</option>
+                            <option value="croissant">Croissant</option>
+                            <option value="decroissant">Décroissant</option>
                         </select>
                     </fieldset>
-                    <fieldset>
-                        <legend>Popularité :</legend>
-                        <select class="rechercheNotificationButton">
+                    <fieldset class="filter-group">
+                        <legend class="filter-group__legend">Popularité :</legend>
+                        <select class="filter-group__select">
                             <option value="toutes">Toutes</option>
+                            <option value="populaire">Meilleures notes</option>
                         </select>
                     </fieldset>
-                    <button type="submit" class="rechercheNotificationButton rechercheNotificationSubmit"><i
-                            class="fa-solid fa-filter"></i> Filtrer</button>
+                    <button type="submit" class="filter-group__submit-btn"><i class="fa-solid fa-filter"></i>
+                        Filtrer</button>
                 </form>
             </div>
 
-            <div class="wishlist-grid">
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img6.jpeg"
-                            alt="Pot de fleur décoratif">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Pot de fleur pour décorations</h3>
-                        <div class="product-price"><span class="current-price">5500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img7.jpeg" alt="Croix d'Agadez en argent">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Croix d'Agadez en Argent pur</h3>
-                        <div class="product-price"><span class="current-price">5600fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img36.jpeg" alt="Calebasse et tapis artistique">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Calebasse et Tapis Artistique</h3>
-                        <div class="product-price"><span class="current-price">7500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img9.jpeg" alt="Statue décorative">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Statue décorative</h3>
-                        <div class="product-price"><span class="current-price">2000fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img10.jpeg"
-                            alt="Pot de fleur décoratif">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Pot de fleur pour décorations</h3>
-                        <div class="product-price"><span class="current-price">5500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img13.jpeg" alt="Croix d'Agadez en argent">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Croix d'Agadez en Argent pur</h3>
-                        <div class="product-price"><span class="current-price">5600fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img14.jpeg" alt="Calebasse et tapis artistique">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Calebasse et Tapis Artistique</h3>
-                        <div class="product-price"><span class="current-price">7500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img17.jpeg" alt="Statue décorative">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Statue décorative</h3>
-                        <div class="product-price"><span class="current-price">2000fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img18.jpeg"
-                            alt="Pot de fleur décoratif">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Pot de fleur pour décorations</h3>
-                        <div class="product-price"><span class="current-price">5500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img19.jpeg" alt="Croix d'Agadez en argent">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Croix d'Agadez en Argent pur</h3>
-                        <div class="product-price"><span class="current-price">5600fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img20.jpeg" alt="Calebasse et tapis artistique">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Calebasse et Tapis Artistique</h3>
-                        <div class="product-price"><span class="current-price">7500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img21.jpeg" alt="Statue décorative">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Statue décorative</h3>
-                        <div class="product-price"><span class="current-price">2000fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img22.jpeg"
-                            alt="Pot de fleur décoratif">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Pot de fleur pour décorations</h3>
-                        <div class="product-price"><span class="current-price">5500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img23.jpeg" alt="Croix d'Agadez en argent">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Croix d'Agadez en Argent pur</h3>
-                        <div class="product-price"><span class="current-price">5600fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img24.jpeg" alt="Calebasse et tapis artistique">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Calebasse et Tapis Artistique</h3>
-                        <div class="product-price"><span class="current-price">7500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img25.jpeg" alt="Statue décorative">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Statue décorative</h3>
-                        <div class="product-price"><span class="current-price">2000fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img26.jpeg"
-                            alt="Pot de fleur décoratif">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Pot de fleur pour décorations</h3>
-                        <div class="product-price"><span class="current-price">5500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img28.jpeg" alt="Croix d'Agadez en argent">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Croix d'Agadez en Argent pur</h3>
-                        <div class="product-price"><span class="current-price">5600fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img29.jpeg" alt="Calebasse et tapis artistique">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Calebasse et Tapis Artistique</h3>
-                        <div class="image-habit/img30.jpeg"><span class="current-price">7500fcfa</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="image-habit/img31.jpeg" alt="Statue décorative">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Statue décorative</h3>
-                        <div class="product-price"><span class="current-price">2000fcfa</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
+            <div class="product-grid">
             </div>
         </section>
 
     </main>
 
+    <footer class="site-footer">
+        <div class="u-container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>AgroStyle</h3>
+                    <p>Votre marché en ligne pour des produits authentiques, durables et élégants, sélectionnés avec
+                        soin
+                        pour leur qualité et leur respect de l'environnement.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-links__link" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-links__link" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-links__link" aria-label="Pinterest"><i
+                                class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-links__link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Liens Rapides</h3>
+                    <ul class="footer__link-list">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="categories.html">Catégories</a></li>
+                        <li><a href="nouveautes.html">Nouveautés</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Informations</h3>
+                    <ul class="footer__link-list">
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="livraison.html">Livraison</a></li>
+                        <li><a href="retours.html">Retours</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contact@agrostyle.fr</p>
+                    <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Rue de la Nature, 75000 Paris</p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2023 AgroStyle - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -4,344 +4,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist</title>
+    <title>Céréales & Légumineuses | AgroStyle</title>
 
     <link rel="stylesheet" href="../style/styles.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-        <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">
+    <header class="site-header">
+        <div class="u-container">
+            <div class="header__content">
+                <div class="site-logo">
+                    <div class="site-logo__icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <div class="logo-text">
+                    <div class="site-logo__text">
                         <h1>AgroStyle</h1>
                         <p>Élégance Naturelle & Authentique</p>
                     </div>
                 </div>
 
-                <nav>
+                <nav class="main-nav">
                     <ul>
-                        <li><a href="../../index.html" class="active">Accueil</a></li>
-                        <li><a href="/pages/index.html">Produits</a></li>
-                        <li><a href="nouveautes.html">Nouveautés</a></li>
-                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="../../accueil.html" class="main-nav__link">Accueil</a></li>
+                        <li><a href="../index.html" class="main-nav__link main-nav__link--active">Produits</a></li>
+                        <li><a href="nouveautes.html" class="main-nav__link">Nouveautés</a></li>
+                        <li><a href="../../apropos.html" class="main-nav__link">À propos</a></li>
                     </ul>
                 </nav>
 
-                <div class="nav-buttons">
-                    <button class="btn-icon">
+                <div class="header__action-buttons">
+                    <a href="notification.html" class="action-btn">
                         <i class="fas fa-bell"></i>
-                        <span class="notification-badge">3</span>
-                    </button>
-                    <button class="btn-icon">
+                        <span class="action-btn__badge">3</span>
+                    </a>
+                    <a href="./panier/panier.html" class="action-btn">
                         <i class="fas fa-shopping-cart"></i>
-                    </button>
-                    <button class="btn-login">
+                    </a>
+                    <a href="../index.html" class="action-btn--login">
                         <i class="fas fa-user"></i>
                         Connexion
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="navbar">
-        <div class="filters">
-            <div class="container">
-                <h1>Nos Produits</h1>
-                <div class="filter-options">
-                    <div class="search-bar">
-                        <input type="text" placeholder="Rechercher un produit...">
-                        <button>🔍</button>
-                    </div>
-                    <div class="category-filters">
-                        <a href="../index.html" class="filter-btn active">Tous</a>
-                        <a href="leg_cereales.html" class="filter-btn">Produits Agricoles</a>
-                        <a href="../vestimentaire/vestimentaire.html" class="filter-btn">Vestimentaire</a>
-                        <a href="../Art_decoration/decore.html" class="filter-btn">Art et Décoration</a>
-                        <a href="../Cosmétique/cosmetique.html" class="filter-btn">Cosmétiques</a>
-                    </div>
+    <section class="filter-section">
+        <div class="u-container">
+            <h1 class="filter-section__title">Produits Agricoles</h1>
+            <div class="filter-options">
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher un produit...">
+                    <button class="search-bar__btn" aria-label="Rechercher">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="category-filters">
+                    <a href="../index.html" class="filter-btn">Tous</a>
+                    <a href="#" class="filter-btn filter-btn--active">Produits Agricoles</a>
+                    <a href="../vestimentaire/vestimentaire.html" class="filter-btn">Vestimentaire</a>
+                    <a href="../Art_decoration/decore.html" class="filter-btn">Art et Décoration</a>
+                    <a href="../Cosmétique/cosmetique.html" class="filter-btn">Cosmétiques</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <header class="navbarHeader">
-        <div class="navbarContainer">
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="../leg_cereales/leg_cereales.html" class="sublink">Céréales & Légumineuses</a></li>
-                    <li><a href="boissons_jus_fruits.html" class="sublink">Boissons & Jus de Fruits</a></li>
-                    <li><a href="../produits_trans_epices/produits_trans_epices.html" class="sublink">Produits transformés &
-                            Épicerie</a></li>
-                    <li><a href="../produits_animaux_laitiers/produits_animaux_laitiers.html" class="sublink">Produits Animaux &
-                            Laitiers</a></li>
+    <section class="subnav-section">
+        <div class="u-container">
+            <nav class="sub-nav">
+                <ul class="sub-nav__list">
+                    <li><a href="../leg_cereales/leg_cereales.html" class="sub-nav__link">Céréales &
+                            Légumineuses</a></li>
+                    <li><a href="boissons_jus_fruits.html" class="sub-nav__link sub-nav__link--active">Boissons & Jus de
+                            Fruits</a></li>
+                    <li><a href="../produits_trans_epices/produits_trans_epices.html" class="sub-nav__link">Produits
+                            Transformés & Épices</a></li>
+                    <li><a href="../produits_animaux_laitiers/produits_animaux_laitiers.html"
+                            class="sub-nav__link">Produits Animaux & Laitiers</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </section>
 
-    <main class="container">
+    <main class="product-main">
+        <div class="u-container">
 
-        <section aria-labelledby="top-produits">
-            <div class="section-title">
-                <span id="top-produits">Top Boissons et Jus Naturels</span>
-                <a href="#" class="see-all">Voir Plus</a>
-            </div>
+            <section class="product-list-section" aria-labelledby="top-cereales">
+                <header class="section-header">
+                    <h2 class="section-header__title" id="top-cereales">Top Produits Céréales & Légumineuses</h2>
+                    <a href="#" class="section-header__see-all-link">Voir Plus</a>
+                </header>
 
-            <div class="wishlist-grid">
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="discount-badge">-38%</span>
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/bissap.jpg" alt="Bouteille de Jus de Bissap">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Jus de Bissap (Hibiscus) 1L</h3>
-
-                        <div class="product-price">
-                            <span class="current-price">950 FCFA</span>
-                            <span class="old-price">1.550 FCFA</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="discount-badge">-15%</span>
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/gingembre.jpg" alt="Bouteille de Jus de Gingembre">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Jus de Gingembre Pimenté 500ml</h3>
-
-                        <div class="product-price">
-                            <span class="current-price">680 FCFA</span>
-                            <span class="old-price">800 FCFA</span>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <span class="product-card__badge">-38%</span>
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/riz_niger.jpeg" alt="Riz local de Qualité Supérieure">
                         </div>
 
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/jus_pasteque.jpg" alt="Bouteille de Jus de Baobab">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Cocktail Pastèque Citron 1.5L</h3>
-
-                        <div class="product-price">
-                            <span class="current-price">1.800 FCFA</span>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Riz Blanc Qualité Premium (5kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">6 000 F CFA</span>
+                                <span class="product-card__price--old">7 250 F CFA</span>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-            </div>
-        </section>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <span class="product-card__badge">-36%</span>
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/haricot_rouge.jpg" alt="Haricots Rouges Secs">
+                        </div>
 
-        <section aria-labelledby="recommendations" class="just-for-you">
-            <div class="section-title">
-                <span id="recommendations">Autres Jus et Saveurs</span>
-                <a href="#" class="see-all">Voir Plus</a>
-            </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Haricots Rouges Locaux (1kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">3 000 F CFA</span>
+                                <span class="product-card__price--old">3 750 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
 
-            <div class="wishlist-grid">
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/grains_mil.jpeg" alt="Sac de Mil Grains">
+                        </div>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/tamarin.jpg"
-                            alt="Bouteille de Jus de Tamarin">
-                    </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Grains de Mil Secs (10kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">12 500 F CFA</span>
+                            </div>
+                        </div>
+                    </article>
 
-                    <div class="product-info">
-                        <h3 class="product-name">Jus de Tamarin (Dèguè) 500ml</h3>
-                        <div class="product-price"><span class="current-price">500 FCFA</span></div>
-                    </div>
-                </article>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/mais_grains.jpg" alt="Sachet de Maïs Grain">
+                        </div>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/jus_orange.jpg" alt="Bouteille de Jus d'Orange">
-                    </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Maïs en Grains Bio (2kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">2 200 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
 
-                    <div class="product-info">
-                        <h3 class="product-name">Jus d'Orange Frais (50 cl)</h3>
-                        <div class="product-price"><span class="current-price">750 FCFA</span></div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/lait_caille.jpeg" alt="Sachet de Lait caillé (Déguè)">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Lait Caillé (Yaourt) Naturel 500ml</h3>
-                        <div class="product-price"><span class="current-price">450 FCFA</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-                
                 </div>
-        </section>
+            </section>
 
-        <section aria-labelledby="tout" class="just-for-you">
-            <div class="section-title">
-                <span id="tout">Tout (Boissons et Jus)</span>
-                <form action="#" id="rechercheNotifications">
-                    <fieldset>
-                        <legend>Date d'ajout :</legend>
-                        <select class="rechercheNotificationButton">
-                            <option value="toutes">Toutes</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Prix :</legend>
-                        <select class="rechercheNotificationButton">
-                            <option value="toutes">Toutes</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Popularité :</legend>
-                        <select class="rechercheNotificationButton">
-                            <option value="toutes">Toutes</option>
-                        </select>
-                    </fieldset>
-                    <button type="submit" class="rechercheNotificationButton rechercheNotificationSubmit"><i
-                            class="fa-solid fa-filter"></i> Filtrer</button>
-                </form>
-            </div>
+            <section class="product-list-section" aria-labelledby="reco-cereales">
+                <header class="section-header">
+                    <h2 class="section-header__title" id="reco-cereales">Recommandations</h2>
+                    <a href="#" class="section-header__see-all-link">Voir Plus</a>
+                </header>
 
-            <div class="wishlist-grid">
+                <div class="product-grid">
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/tamarin.jpg"
-                            alt="Jus de Tamarin">
-                    </div>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/pois_chiche.jpeg" alt="Pois chiches sacs">
+                        </div>
 
-                    <div class="product-info">
-                        <h3 class="product-name">Jus de Tamarin (500ml)</h3>
-                        <div class="product-price"><span class="current-price">500 FCFA</span></div>
-                    </div>
-                </article>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Pois Chiches Secs (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">3 500 F CFA</span>
+                            </div>
+                        </div>
+                    </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/jus_orange.jpg" alt="Jus d'Orange">
-                    </div>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/lentilles_vertes.png" alt="Lentilles Vertes sacs">
+                        </div>
 
-                    <div class="product-info">
-                        <h3 class="product-name">Jus d'Orange Frais (50 cl)</h3>
-                        <div class="product-price"><span class="current-price">750 FCFA</span></div>
-                    </div>
-                </article>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Lentilles Vertes Locales (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">3 600 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/lait_caille.jpeg" alt="Lait Caillé">
-                    </div>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/sorgho_rouge.avif" alt="Sorgho en grains">
+                        </div>
 
-                    <div class="product-info">
-                        <h3 class="product-name">Lait Caillé (Yaourt) 500ml</h3>
-                        <div class="product-price"><span class="current-price">450 FCFA</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-            
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Sorgho Rouge (5kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">4 700 F CFA</span>
+                            </div>
+                        </div>
+                    </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/bissap.jpg" alt="Jus de Bissap">
-                    </div>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/fonio.png" alt="Sacs de Fonio">
+                        </div>
 
-                    <div class="product-info">
-                        <h3 class="product-name">Jus de Bissap (1L)</h3>
-                        <div class="product-price"><span class="current-price">950 FCFA</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Fonio de Haute Qualité (1kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 250 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/baobab.jpg" alt="Jus de Baobab">
-                    </div>
+                </div>
+            </section>
 
-                    <div class="product-info">
-                        <h3 class="product-name">Bouye (Jus de Baobab) 1.5L</h3>
-                        <div class="product-price"><span class="current-price">1.800 FCFA</span></div>
-                    </div>
-                </article>
+            <section class="product-list-section" aria-labelledby="tous-cereales">
+                <header class="section-header section-header--with-form">
+                    <h2 class="section-header__title" id="tous-cereales">Tous les Produits de la Catégorie</h2>
+                    <form action="#" class="section-header__filter-form" aria-label="Filtres avancés de produits">
+                        <fieldset class="filter-group">
+                            <legend class="filter-group__legend">Date d'ajout :</legend>
+                            <select class="filter-group__select">
+                                <option value="toutes">Toutes</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="filter-group">
+                            <legend class="filter-group__legend">Prix :</legend>
+                            <select class="filter-group__select">
+                                <option value="toutes">Toutes</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="filter-group">
+                            <legend class="filter-group__legend">Popularité :</legend>
+                            <select class="filter-group__select">
+                                <option value="toutes">Toutes</option>
+                            </select>
+                        </fieldset>
+                        <button type="submit" class="filter-group__submit-btn">
+                            <i class="fa-solid fa-filter"></i> Filtrer
+                        </button>
+                    </form>
+                </header>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/kinkeliba.jpg" alt="Jus de Kinkéliba">
-                    </div>
+                <div class="product-grid">
 
-                    <div class="product-info">
-                        <h3 class="product-name">Thé de Kinkéliba Glacé 1.5L</h3>
-                        <div class="product-price"><span class="current-price">1.300 FCFA</span></div>
-                    </div>
-                </article>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/farine_blé.jpg" alt="Sac de Farine de Blé">
+                        </div>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Ajouter au panier</button>
-                        <img src="../../images/jus_ananas.jpg" alt="Jus d'Ananas">
-                    </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Farine de Blé T45 (1kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">3 500 F CFA</span>
+                            </div>
+                        </div>
+                    </article>
 
-                    <div class="product-info">
-                        <h3 class="product-name">Jus d'Ananas Naturel Pressé 1L</h3>
-                        <div class="product-price"><span class="current-price">1.000 FCFA</span></div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/arachide_decortique.webp" alt="Sachet d'Arachides">
+                        </div>
 
-            </div>
-        </section>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Arachides Décortiquées (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">3 600 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
 
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/poids_terre.webp" alt="Pois de terre sacs">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Pois de Terre Secs (1kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">4 700 F CFA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/semoule_mais.jpg" alt="Sachet de Semoule de Maïs">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Semoule de Maïs (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 250 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/moringa.jpg" alt="Moringa">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Moringa (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 500 F CFA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/seigle.jpg" alt="Grains de Seigle">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Grains de Seigle (1kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 250 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/manioc.jpg" alt="Manioc">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Manioc (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">600 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/arachide.jpg" alt="Arachide">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Arachide non décortiquées (Sac)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">6 700 F CFA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/pommedeterre.webp" alt="Pomme de terre">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Pomme de terre (1kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 250 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
     </main>
 
-        <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+    <footer class="site-footer">
+        <div class="u-container">
+            <div class="footer__content">
+                <div class="footer__section">
                     <h3>AgroStyle</h3>
                     <p>Votre marché en ligne pour des produits authentiques, durables et élégants, sélectionnés avec
-                        soin pour leur qualité et leur respect de l'environnement.</p>
+                        soin
+                        pour leur qualité et leur respect de l'environnement.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-links__link" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-links__link" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-links__link" aria-label="Pinterest"><i
+                                class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-links__link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer__section">
                     <h3>Liens Rapides</h3>
-                    <ul class="footer-links">
+                    <ul class="footer__link-list">
                         <li><a href="#">Accueil</a></li>
                         <li><a href="produits.html">Produits</a></li>
                         <li><a href="categories.html">Catégories</a></li>
@@ -350,9 +450,9 @@
                     </ul>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer__section">
                     <h3>Informations</h3>
-                    <ul class="footer-links">
+                    <ul class="footer__link-list">
                         <li><a href="apropos.html">À propos</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="livraison.html">Livraison</a></li>
@@ -361,7 +461,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer__section">
                     <h3>Contact</h3>
                     <p><i class="fas fa-envelope"></i> contact@agrostyle.fr</p>
                     <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
@@ -369,12 +469,11 @@
                 </div>
             </div>
 
-            <div class="footer-bottom">
+            <div class="footer__bottom">
                 <p>&copy; 2023 AgroStyle - Tous droits réservés</p>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
