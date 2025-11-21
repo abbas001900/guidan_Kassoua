@@ -159,6 +159,9 @@ body {
 }
 
 .btn-checkout {
+    text-align: center;
+    text-decoration: none;
+    display: block;
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -187,3 +190,5 @@ body {
 .continue-shopping:hover {
     text-decoration: underline;
 }
+
+
