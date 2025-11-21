@@ -21,42 +21,44 @@
 
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="../../index.html" class="main-nav__link">Accueil</a></li> <li><a href="../index.html" class="main-nav__link main-nav__link--active">Produits</a></li> <li><a href="nouveautes.html" class="main-nav__link">Nouveautés</a></li>
-                        <li><a href="apropos.html" class="main-nav__link">À propos</a></li>
+                        <li><a href="../../accueil.html" class="main-nav__link">Accueil</a></li>
+                        <li><a href="../index.html" class="main-nav__link main-nav__link--active">Produits</a></li>
+                        <li><a href="../../nouveautes.html" class="main-nav__link">Nouveautés</a></li>
+                        <li><a href="../../apropos.html" class="main-nav__link">À propos</a></li>
                     </ul>
                 </nav>
 
-                <div class="header__action-buttons"> <button class="action-btn" aria-label="Notifications"> <i class="fas fa-bell"></i>
-                        <span class="action-btn__badge">3</span> </button>
-                    <button class="action-btn" aria-label="Panier"> <i class="fas fa-shopping-cart"></i>
-                    </button>
-                    <button class="action-btn action-btn--login" aria-label="Connexion/Compte utilisateur"> <i class="fas fa-user"></i>
+                <div class="header__action-buttons">
+                    <a href="../../notification.html" class="action-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="action-btn__badge">3</span>
+                    </a>
+                    <a href="../../panier.html" class="action-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="../../index.html" class="action-btn--login">
+                        <i class="fas fa-user"></i>
                         Connexion
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="filter-section" aria-labelledby="main-product-title"> <div class="u-container"> <h2 id="main-product-title" class="filter-section__title">Nos Produits</h2> <div class="filter-options">
+    <section class="filter-section" aria-labelledby="main-product-title"> <div class="u-container"> <h2 id="main-product-title" class="filter-section__title">Arts & Décoration</h2> <div class="filter-options">
                 <div class="search-bar">
                     <input type="search" placeholder="Rechercher un produit..." aria-label="Rechercher un produit">
                     <button class="search-bar__btn" aria-label="Lancer la recherche"><i class="fas fa-search"></i></button> </div>
                 <nav class="category-filters">
                     <a href="../index.html" class="filter-btn">Tous</a>
                     <a href="../leg_cereales/leg_cereales.html" class="filter-btn">Produits Agricoles</a>
-                    <a href="vestimentaire.html" class="filter-btn filter-btn--active">Vestimentaire</a> <a href="../Art_decoration/decore.html" class="filter-btn">Art et Décoration</a>
+                    <a href="../vestimentaire/vestimentaire.html" class="filter-btn">Vestimentaire</a>
+                    <a href="decore.html" class="filter-btn filter-btn--active">Art et Décoration</a>
                     <a href="../Cosmétique/cosmetique.html" class="filter-btn">Cosmétiques</a>
                 </nav>
             </div>
         </div>
     </section>
-
-    <nav class="subnav-section" aria-label="Sous-catégories Vestimentaires"> <div class="sub-nav u-container"> <ul class="sub-nav__list"> <li><a href="habit/habit.html" class="sub-nav__link sub-nav__link--active">Habits</a></li> <li><a href="accessoir/accessoir.html" class="sub-nav__link">Accessoires</a></li>
-                <li><a href="chaussure/chaussure.html" class="sub-nav__link">Chaussures</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <main class="u-container product-main"> <section aria-labelledby="top-produits" class="product-list-section"> <div class="section-header"> <h2 id="top-produits" class="section-header__title">Top Produits</h2> <a href="#" class="section-header__see-all-link">Voir Plus</a> </div>
 
