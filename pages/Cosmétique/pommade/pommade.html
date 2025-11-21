@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestimentaire - AgroStyle</title>
+
+    <link rel="stylesheet" href="../../style/styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="site-header"> <div class="u-container"> <div class="header__content"> 
+        <div class="site-logo">
+                    <div class="site-logo__icon">
+                        <img src="../../../Gidan-kasuwa.png" alt="">
+                    </div>
+                    <div class="site-logo__text">
+                        <h1>Gidan Kasuwa</h1>
+                        <p>Le Marché de l'Excellence Nigérienne</p>
+                    </div>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../../accueil.html" class="main-nav__link">Accueil</a></li>
+                        <li><a href="../../index.html" class="main-nav__link main-nav__link--active">Produits</a></li>
+                        <li><a href="../../../nouveautes.html" class="main-nav__link">Nouveautés</a></li>
+                        <li><a href="../../../apropos.html" class="main-nav__link">À propos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__action-buttons">
+                    <a href="../../notification.html" class="action-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="action-btn__badge">3</span>
+                    </a>
+                    <a href="../../panier.html" class="action-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="../../../index.html" class="action-btn--login">
+                        <i class="fas fa-user"></i>
+                        Connexion
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="filter-section" aria-labelledby="main-product-title"> <div class="u-container"> <h2 id="main-product-title" class="filter-section__title">Nos Produits</h2> <div class="filter-options">
+                <div class="search-bar">
+                    <input type="search" placeholder="Rechercher un produit..." aria-label="Rechercher un produit">
+                    <button class="search-bar__btn" aria-label="Lancer la recherche"><i class="fas fa-search"></i></button> </div>
+                <nav class="category-filters">
+                    <a href="../../index.html" class="filter-btn">Tous</a>
+                    <a href="../../leg_cereales/leg_cereales.html" class="filter-btn">Produits Agricoles</a>
+                    <a href="../../vestimentaire/vestimentaire.html" class="filter-btn">Vestimentaire</a>
+                    <a href="../../Art_decoration/decore.html" class="filter-btn">Art et Décoration</a>
+                    <a href="../cosmetique.html" class="filter-btn filter-btn--active">Cosmétiques</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <nav class="subnav-section" aria-label="Sous-catégories Vestimentaires">
+        <div class="sub-nav u-container">
+            <ul class="sub-nav__list">
+                <li><a href="../savon/savon.html" class="sub-nav__link">Savon</a></li>
+                <li><a href="pommade.html" class="sub-nav__link sub-nav__link--active">Pommade</a></li>
+                <li><a href="../parfum/parfum.html" class="sub-nav__link">Parfum</a></li>
+                <li><a href="../encen/encen.html" class="sub-nav__link">encen</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="u-container product-main"> <section aria-labelledby="top-produits" class="product-list-section"> <div class="section-header"> <h2 id="top-produits" class="section-header__title">Top Produits</h2> <a href="#" class="section-header__see-all-link">Voir Plus</a> </div>
+
+            <ul class="product-grid"> <li class="product-card">
+                    <article> 
+                        <figure class="product-card__image"> <span class="product-card__badge">-38%</span> <img src="images-pommade/pommade1.jpeg" alt="Chaussures en cuir haute qualité, faites main">
+                            <button class="product-card__add-to-cart-btn" aria-label="Ajouter Chaussures en cuir de haute Qualité au panier"> <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
+                            </button>
+                        </figure>
+                        <div class="product-card__info"> <h3 class="product-card__name">Beurre de Karité</h3> <div class="product-card__price"> <span class="product-card__price--current">960 FCFA</span> <span class="product-card__price--old">1160 FCFA</span> </div>
+                        </div>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure class="product-card__image">
+                            <span class="product-card__badge">-36%</span>
+                            <img src="images-pommade/pommade2.jpeg" alt="Tissu Pagne traditionnel à motifs colorés">
+                            <button class="product-card__add-to-cart-btn" aria-label="Ajouter Pagne Traditionnel au panier">
+                                <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
+                            </button>
+                        </figure>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Crème Nature</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--old">1160 FCFA</span>
+                            </div>
+                            <div class="product-card__rating" aria-label="Évaluation de 5 étoiles sur 5, basée sur 65 avis">★★★★★ (65)</div> </div>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure class="product-card__image">
+                            <img src="images-pommade/pommade3.jpeg" alt="Bague touareg en argent pur">
+                            <button class="product-card__add-to-cart-btn" aria-label="Ajouter Bague en Argent pur au panier">
+                                <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
+                            </button>
+                        </figure>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Pommade Soin Bébé</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1960 FCFA</span>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure class="product-card__image">
+                            <img src="images-pommade/pommade4.jpeg" alt="Petit tabouret artisanal en cuir 100%">
+                            <button class="product-card__add-to-cart-btn" aria-label="Ajouter Tabouret en Cuir 100% au panier">
+                                <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
+                            </button>
+                        </figure>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Vaseline</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1160 FCFA</span>
+                            </div>
+                            <div class="product-card__rating" aria-label="Évaluation de 5 étoiles sur 5, basée sur 65 avis">★★★★★ (65)</div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="recommendations" class="product-list-section"> <div class="section-header"> <h2 id="recommendations" class="section-header__title">Recommendations</h2> <a href="#" class="section-header__see-all-link">Voir Plus</a> </div>
+
+            <ul class="product-grid"> <li class="product-card">
+                    <article>
+                        <figure class="product-card__image">
+                            <img src=" images-pommade/pommade5.jpeg" alt="Pot de fleur en terre cuite pour décoration">
+                            <button class="product-card__add-to-cart-btn" aria-label="Ajouter Pot de fleur pour décorations au panier">
+                                <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
+                            </button>
+                        </figure>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Pommade Rosemari</h3>
+                            <div class="product-card__price"><span class="product-card__price--current">550 FCFA</span></div>
+                        </div>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure class="product-card__image">
+                            <img src="images-pommade/pommade6.jpeg" alt="Croix d'Agadez en argent, bijou culturel">
+                            <button class="product-card__add-to-cart-btn" aria-label="Ajouter Croix d'Agadez en Argent pur au panier">
+                                <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
+                            </button>
+                        </figure>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Crème soin</h3>
+                            <div class="product-card__price"><span class="product-card__price--current">560 FCFA</span></div>
+                            <div class="product-card__rating" aria-label="Évaluation de 5 étoiles sur 5, basée sur 65 avis">★★★★★ (65)</div>
+                        </div>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure class="product-card__image">
+                            <img src="images-pommade/pommade7.jpeg" alt="Calebasse et tapis artistique nigérien">
+                            <button class="product-card__add-to-cart-btn" aria-label="Ajouter Calebasse et Tapis Artistique au panier">
+                                <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
+                            </button>
+                        </figure>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Coco Pommade</h3>
+                            <div class="product-card__price"><span class="product-card__price--current">750 FCFA</span></div>
+                        </div>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure class="product-card__image">
+                            <img src="images-pommade/pommade8.jpeg" alt="Statue décorative africaine en bois">
+                            <button class="product-card__add-to-cart-btn" aria-label="Ajouter Statue décorative au panier">
+                                <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
+                            </button>
+                        </figure>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Pommade Noir Soin</h3>
+                            <div class="product-card__price"><span class="product-card__price--current">600 FCFA</span></div>
+                            <div class="product-card__rating" aria-label="Évaluation de 5 étoiles sur 5, basée sur 65 avis">★★★★★ (65)</div>
+                        </div>
+                    </article>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer"> <div class="u-container"> <div class="footer__content"> <div class="footer__section"> <h3>Gidan Kasuwa</h3>
+                    <p>Votre marché en ligne pour des produits authentiques, durables et élégants, sélectionnés avec
+                        soin pour leur qualité et leur respect de l'environnement.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-links__link" aria-label="Notre page Facebook"><i class="fab fa-facebook-f"></i></a> <a href="#" class="social-links__link" aria-label="Notre compte Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-links__link" aria-label="Notre compte Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-links__link" aria-label="Notre compte TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Liens Rapides</h3>
+                    <ul class="footer__link-list"> <li><a href="../../index.html">Accueil</a></li>
+                        <li><a href="../index.html">Produits</a></li>
+                        <li><a href="categories.html">Catégories</a></li>
+                        <li><a href="nouveautes.html">Nouveautés</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Informations</h3>
+                    <ul class="footer__link-list">
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="livraison.html">Livraison</a></li>
+                        <li><a href="retours.html">Retours</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section contact-info">
+              <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> Gidan-kasuwa@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +227 90 00 00 90</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cite de l'innovation, sadore</p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Gidan Kasuwa - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

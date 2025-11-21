@@ -4,271 +4,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produits transformés & Épicerie</title>
+    <title>Céréales & Légumineuses | AgroStyle</title>
 
     <link rel="stylesheet" href="../style/styles.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQ5u0lqLh5u/L7aXyC7Q9h2/b3I0tqQ=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="navbarContainer">
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="../leg_cereales/leg_cereales.html">Céréales & Légumineuses</a></li>
-                    <li><a href="../boissons_jus_fuits/boissons_jus_fruits.html">Boissons & Jus de Fruits</a></li>
-                    <li><a href="produits_trans_epices.html">Produits transformés & Épicerie</a></li>
-                    <li><a href="../produits_animaux_laitiers/produits_animaux_laitiers.html">Produits Animaux & Laitiers</a></li>
-                </ul>
-            </nav>
+    <header class="site-header">
+        <div class="u-container">
+            <div class="header__content">
+                <div class="site-logo">
+                    <div class="site-logo__icon">
+                        <img src="../../Gidan-kasuwa.png" alt="">
+                    </div>
+                    <div class="site-logo__text">
+                        <h1>Gidan Kasuwa</h1>
+                        <p>Le Marché de l'Excellence Nigérienne</p>
+                    </div>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../accueil.html" class="main-nav__link">Accueil</a></li>
+                        <li><a href="../index.html" class="main-nav__link main-nav__link--active">Produits</a></li>
+                        <li><a href="nouveautes.html" class="main-nav__link">Nouveautés</a></li>
+                        <li><a href="../../apropos.html" class="main-nav__link">À propos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__action-buttons">
+                    <a href="notification.html" class="action-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="action-btn__badge">3</span>
+                    </a>
+                    <a href="./panier/panier.html" class="action-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="../index.html" class="action-btn--login">
+                        <i class="fas fa-user"></i>
+                        Connexion
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-
-        <section aria-labelledby="top-produits">
-            <div class="section-title">
-                <span id="top-produits">Top Produits Transformés & Épicerie</span>
-                <a href="#" class="see-all">Voir Plus</a>
+    <section class="filter-section">
+        <div class="u-container">
+            <h1 class="filter-section__title">Produits Agricoles</h1>
+            <div class="filter-options">
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher un produit...">
+                    <button class="search-bar__btn" aria-label="Rechercher">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="category-filters">
+                    <a href="../index.html" class="filter-btn">Tous</a>
+                    <a href="#" class="filter-btn filter-btn--active">Produits Agricoles</a>
+                    <a href="../vestimentaire/vestimentaire.html" class="filter-btn">Vestimentaire</a>
+                    <a href="../Art_decoration/decore.html" class="filter-btn">Art et Décoration</a>
+                    <a href="../Cosmétique/cosmetique.html" class="filter-btn">Cosmétiques</a>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="wishlist-grid">
+    <section class="subnav-section">
+        <div class="u-container">
+            <nav class="sub-nav">
+                <ul class="sub-nav__list">
+                    <li><a href="../leg_cereales/leg_cereales.html" class="sub-nav__link">Céréales &
+                            Légumineuses</a></li>
+                    <li><a href="../boissons_jus_fuits/boissons_jus_fruits.html" class="sub-nav__link">Boissons & Jus de
+                            Fruits</a></li>
+                    <li><a href="produits_trans_epices.html" class="sub-nav__link sub-nav__link--active">Produits
+                            Transformés & Épices</a></li>
+                    <li><a href="../produits_animaux_laitiers/produits_animaux_laitiers.html"
+                            class="sub-nav__link">Produits Animaux & Laitiers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="discount-badge">-38%</span>
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/huilearachide.jpg" alt="Bidon d'Huile d'Arachide Raffinée 5L">
-                    </div>
+    <main class="product-main">
+        <div class="u-container">
 
-                    <div class="product-info">
-                        <h3 class="product-name">Huile d'Arachide Raffinée (1L)</h3>
+            <section class="product-list-section" aria-labelledby="top-cereales">
+                <header class="section-header">
+                    <h2 class="section-header__title" id="top-cereales">Top Produits Céréales & Légumineuses</h2>
+                    <a href="#" class="section-header__see-all-link">Voir Plus</a>
+                </header>
 
-                        <div class="product-price">
-                            <span class="current-price">2 500 F CFA</span>
-                            <span class="old-price">3 500 F CFA</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/sucre.jpeg" alt="Sachet de Sucre en Morceaux">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Sucre en Morceaux (1kg)</h3>
-
-                        <div class="product-price">
-                            <span class="current-price">1 500 F CFA</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/pate_arachide.jpg" alt="Pot de Pâte d'Arachide naturelle">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Pâte d'Arachide Pure (500g)</h3>
-
-                        <div class="product-price">
-                            <span class="current-price">2 500 F CFA</span>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <span class="product-card__badge">-38%</span>
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/miel.jpg" alt="miel">
                         </div>
 
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <section aria-labelledby="recommendations" class="just-for-you">
-            <div class="section-title">
-                <span id="recommendations">Recommendations</span>
-                <a href="#" class="see-all">Voir Plus</a>
-            </div>
-
-            <div class="wishlist-grid">
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/poivre_noir.jpg"
-                            alt="Sachet de Poivre Noir Moulu">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Poivre Noir Moulu (100g)</h3>
-                        <div class="product-price">
-                            <span class="current-price">1 800 F CFA</span>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Miel (50cl)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current"> 2 000 F CFA</span>
+                                <span class="product-card__price--old"> 3 250 F CFA</span>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/curryry.jpg" alt="Pot d'Épice Curry en Poudre">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Curry en Poudre (50g)</h3>
-                        <div class="product-price">
-                            <span class="current-price">1 500 F CFA</span>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <span class="product-card__badge">-36%</span>
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/huile_palme.webp" alt="Haricots Rouges Secs">
                         </div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/huile_palme.webp" alt="Bouteille d'Huile de Palme Rouge 1L">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Huile de Palme Rouge (1L)</h3>
-                        <div class="product-price">
-                            <span class="current-price">2 200 F CFA</span>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Huile de Palme (1L)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current"> 3 000 F CFA</span>
+                                <span class="product-card__price--old"> 3 750 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
                         </div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
+                    </article>
 
-            </div>
-        </section>
-
-        <section aria-labelledby="tout" class="just-for-you">
-            <div class="section-title">
-                <span id="tout">Tout</span>
-                <form action="#" id="rechercheNotifications">
-                    <fieldset>
-                        <legend>Date d'ajout :</legend>
-                        <select class="rechercheNotificationButton">
-                            <option value="toutes">Toutes</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Prix :</legend>
-                        <select class="rechercheNotificationButton">
-                            <option value="toutes">Toutes</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Popularité :</legend>
-                        <select class="rechercheNotificationButton">
-                            <option value="toutes">Toutes</option>
-                        </select>
-                    </fieldset>
-                    <button type="submit" class="rechercheNotificationButton rechercheNotificationSubmit"><i
-                            class="fa-solid fa-filter"></i> Filtrer</button>
-                </form>
-            </div>
-
-            <div class="wishlist-grid">
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/gingembre_moulu.jpg"
-                            alt="Gingembre Moulu en sachet">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Gingembre Moulu (100g)</h3>
-                        <div class="product-price">
-                            <span class="current-price">1 200 F CFA</span>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/curry.jpg" alt="Curry">
                         </div>
-                    </div>
-                </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/piment_poudre.jpg" alt="Piment en poudre fort">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Piment en Poudre Fort (250g)</h3>
-                        <div class="product-price">
-                            <span class="current-price">2 500 F CFA</span>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Curry</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current"> 1 500 F CFA</span>
+                            </div>
                         </div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
+                    </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/canelle.jpg" alt="Bâtons de Cannelle">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Cannelle en Bâton (50g)</h3>
-                        <div class="product-price">
-                            <span class="current-price">3 200 F CFA</span>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/gingembre_moulu.jpg" alt="Sachet de Maïs Grain">
                         </div>
-                    </div>
-                </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/ails_poudre.webp"
-                            alt="Bouteille d'Ail en Poudre">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Ail en Poudre (100g)</h3>
-                        <div class="product-price">
-                            <span class="current-price">2 100 F CFA</span>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Gingembre Moulu (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">2 200 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/farine_mais.jpeg" alt="Sachet de Farine de Maïs Précuite">
-                    </div>
+                </div>
+            </section>
 
-                    <div class="product-info">
-                        <h3 class="product-name">Farine de Maïs (1kg)</h3>
-                        <div class="product-price">
-                            <span class="current-price">1 100 F CFA</span>
+            <section class="product-list-section" aria-labelledby="reco-cereales">
+                <header class="section-header">
+                    <h2 class="section-header__title" id="reco-cereales">Recommandations</h2>
+                    <a href="#" class="section-header__see-all-link">Voir Plus</a>
+                </header>
+
+                <div class="product-grid">
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/seigle.jpg" alt="Seigle">
                         </div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
 
-                <article class="product-card">
-                    <div class="product-image">
-                        <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-                        <img src="../../images/miel.webp" alt="Pot de Miel Pur Local">
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">Miel Pur Local (500g)</h3>
-                        <div class="product-price">
-                            <span class="current-price">4 500 F CFA</span>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Seigle (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">2 500 F CFA</span>
+                            </div>
                         </div>
-                        <div class="rating">★★★★★ (65)</div>
-                    </div>
-                </article>
+                    </article>
 
-            </div>
-        </section>
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/poivre_noir.jpg" alt="Poivre noir">
+                        </div>
 
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Poivre Noir (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">2 600 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="product-list-section" aria-labelledby="tous-cereales">
+                <header class="section-header section-header--with-form">
+                    <h2 class="section-header__title" id="tous-cereales">Tous les Produits de la Catégorie</h2>
+                    <form action="#" class="section-header__filter-form" aria-label="Filtres avancés de produits">
+                        <fieldset class="filter-group">
+                            <legend class="filter-group__legend">Date d'ajout :</legend>
+                            <select class="filter-group__select">
+                                <option value="toutes">Toutes</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="filter-group">
+                            <legend class="filter-group__legend">Prix :</legend>
+                            <select class="filter-group__select">
+                                <option value="toutes">Toutes</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="filter-group">
+                            <legend class="filter-group__legend">Popularité :</legend>
+                            <select class="filter-group__select">
+                                <option value="toutes">Toutes</option>
+                            </select>
+                        </fieldset>
+                        <button type="submit" class="filter-group__submit-btn">
+                            <i class="fa-solid fa-filter"></i> Filtrer
+                        </button>
+                    </form>
+                </header>
+
+                <div class="product-grid">
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/canelle.jpg" alt="canelle">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Canelle (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 600 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/semoule_mais.jpg" alt="Sachet de Semoule de Maïs">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Semoule de Maïs (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 250 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/ails_poudre.webp" alt="ails poudre">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Ails Poudre (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 500 F CFA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/farine_mais.jpeg" alt="Farine de Maïs">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Farine de Maïs (1kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 250 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/poids_terre.webp" alt="poids de terre">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Poids de Terre (500g)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">2 600 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter</button>
+                            <img src="../../images/farine_blé.jpg" alt="Farine de blé">
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Farine de Blé (1kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">1 150 F CFA</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                </div>
     </main>
 
+    <footer class="site-footer">
+        <div class="u-container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Gidan Kasuwa</h3>
+                    <p>Votre marché en ligne pour des produits authentiques, durables et élégants, sélectionnés avec
+                        soin
+                        pour leur qualité et leur respect de l'environnement.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-links__link" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-links__link" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-links__link" aria-label="Pinterest"><i
+                                class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-links__link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Liens Rapides</h3>
+                    <ul class="footer__link-list">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="categories.html">Catégories</a></li>
+                        <li><a href="nouveautes.html">Nouveautés</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Informations</h3>
+                    <ul class="footer__link-list">
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="livraison.html">Livraison</a></li>
+                        <li><a href="retours.html">Retours</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> Gidan-kasuwa@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +227 90 00 00 90</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cite de l'innovation, sadore</p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Gidan Kasuwa - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

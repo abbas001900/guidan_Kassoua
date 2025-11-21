@@ -1,0 +1,712 @@
+/* Variables CSS modernes */
+:root {
+    --primary: #2a6b55;
+    --primary-dark: #1e4d3d;
+    --primary-light: #3a8c70;
+    --secondary: #d4af7a;
+    --accent: #e76f51;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --gray: #6c757d;
+    --gray-light: #e9ecef;
+    --border-radius: 12px;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+}
+
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: #fefefe;
+    overflow-x: hidden;
+    background-color: #FFFAED;
+}
+
+/* Classe utilitaire pour le conteneur */
+.u-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- EN-TÊTE MODERNE (HEADER) --- */
+.site-header {
+    background: #FFFAED;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+
+/* Logo */
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo__icon {
+    font-size: 2rem;
+    color: var(--primary);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+.site-logo__icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+    border-radius: 50%;    
+}   
+
+.site-logo__text h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+}
+
+.site-logo__text p {
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-top: -5px;
+}
+
+/* Navigation Principale */
+.main-nav ul { /* .main-nav__list */
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.main-nav__link { /* Cible directement la classe du lien */
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: var(--transition);
+}
+
+.main-nav__link:hover,
+.main-nav__link--active {
+    color: var(--primary);
+}
+
+.main-nav__link--active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+/* Boutons d'Action du Header */
+.header__action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.action-btn { /* Bouton icône générique */
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: var(--dark);
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.action-btn:hover {
+    background-color: var(--gray-light);
+    color: var(--primary);
+}
+
+.action-btn__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--accent);
+    color: white;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-btn--login { /* Modificateur pour le bouton de connexion */
+    background: var(--gradient);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.action-btn--login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(42, 107, 85, 0.3);
+}
+
+/* --- BANNIÈRE HÉROÏQUE (HERO) --- */
+.hero-section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(Gidan-mou.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.hero-section__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero-section h2 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+/* Bouton Principal (utilisé pour Hero) */
+.main-btn {
+    background-color: white;
+    color: var(--primary);
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- SECTIONS GÉNÉRALES --- */
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- CATÉGORIES --- */
+.category-section__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    position: relative;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.category-card__image {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-card__content {
+    padding: 1.8rem;
+}
+
+.category-card__content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary);
+}
+
+.category-card__content p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.card-btn { /* Bouton de carte */
+    background: var(--gradient);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(42, 107, 85, 0.3);
+}
+
+/* --- PRODUITS --- */
+/* --------------------------------------------------
+    MAIN / GRILLE DE PRODUITS
+-------------------------------------------------- */
+
+/* Grille */
+.product-grid {
+    /* Utilise la grille CSS pour une disposition en colonnes flexibles */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Carte Produit */
+.product-card {
+    background-color: white;
+    border-radius: var(--border-radius); /* 12px */
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    /* Effet de léger déplacement vers le haut au survol */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.product-card__image {
+    height: 250px; /* Hauteur fixe de la zone d'image */
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card__image img {
+    /* S'assure que l'image couvre toute la zone sans déformation */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Badge (Nouveau / Populaire) */
+.product-card__badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--accent); /* #e76f51 */
+    color: white;
+    padding: 4px 10px;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Bouton Ajouter au Panier (au survol) */
+.product-card__add-to-cart-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-top-left-radius: var(--border-radius);
+    /* État initial : invisible et caché en bas */
+    opacity: 0;
+    transform: translateY(100%);
+    transition: var(--transition);
+}
+
+.product-card:hover .product-card__add-to-cart-btn {
+    /* État au survol : visible et remonté */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Info */
+.product-card__info {
+    padding: 15px;
+}
+
+.product-card__name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.product-card__price--current {
+    font-weight: 700;
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+}
+
+/* --- À PROPOS --- */
+.about-section {
+    background: linear-gradient(135deg, #FFFAED 0%, #FFFAED 100%);
+}
+
+.about-section__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-section__text h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.about-section__text p {
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+    font-size: 1.05rem;
+}
+
+/* Statistiques */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stats-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.stats-item__number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.stats-item__label {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.about-section__image {
+    height: 450px;
+    border-radius: var(--border-radius);
+    background: url('Gidan-kasuwa.png') no-repeat center center;
+    background-size: cover;
+    box-shadow: var(--box-shadow);
+}
+
+/* --- NEWSLETTER --- */
+.newsletter-section {
+    background: var(--gradient);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.newsletter-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form__input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.newsletter-form__submit-btn {
+    background: #3a3937;
+    color: white;
+    border: none;
+    padding: 0 2rem;
+    border-radius: 0 50px 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.newsletter-form__submit-btn:hover {
+    background: #c99e65;
+}
+
+/* --- PIED DE PAGE (FOOTER) --- */
+.site-footer {
+    background: var(--dark);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer__section h3 {
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.footer__section p {
+    color: #adb5bd;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.footer__link-list {
+    list-style: none;
+}
+
+.footer__link-list li {
+    margin-bottom: 0.8rem;
+}
+
+.footer__link-list a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer__link-list a:hover {
+    color: var(--secondary);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links__link:hover {
+    background: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.footer__bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #adb5bd;
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .about-section__content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .main-nav ul { /* .main-nav__list */
+        gap: 1.5rem;
+    }
+    
+    .header__action-buttons {
+        gap: 1rem;
+    }
+    
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .newsletter-form__input,
+    .newsletter-form__submit-btn {
+        border-radius: 50px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-nav ul { /* .main-nav__list */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .hero-section {
+        height: 50vh;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .category-section__grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer__content {
+        grid-template-columns: 1fr;
+    }
+}

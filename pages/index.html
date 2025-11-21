@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroStyle | Nos Produits</title>
+
+    <link rel="stylesheet" href="./style/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="u-container">
+            <div class="header__content">
+                <div class="site-logo">
+                    <div class="site-logo__icon">
+                        <img src="../Gidan-kasuwa.png" alt="">
+                    </div>
+                    <div class="site-logo__text">
+                        <h1>Gidan Kasuwa</h1>
+                        <p>Le Marché de l'Excellence Nigérienne</p>
+                    </div>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../accueil.html" class="main-nav__link">Accueil</a></li>
+                        <li><a href="#" class="main-nav__link main-nav__link--active">Produits</a></li>
+                        <li><a href="nouveautes.html" class="main-nav__link">Nouveautés</a></li>
+                        <li><a href="apropos.html" class="main-nav__link">À propos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__action-buttons">
+                    <a href="notification.html" class="action-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="action-btn__badge">3</span>
+                    </a>
+                    <a href="./panier/panier.html" class="action-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="../index.html" class="action-btn--login">
+                        <i class="fas fa-user"></i>
+                        Connexion
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="filter-section">
+        <div class="u-container">
+            <div class="filter-section__content">
+                <h1 class="filter-section__title">Nos Produits</h1>
+
+                <div class="filter-options">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Rechercher un produit...">
+                        <button class="search-bar__btn">🔍</button>
+                    </div>
+
+                    <div class="category-filters">
+                        <a href="./index.html" class="filter-btn filter-btn--active">Tous</a>
+                        <a href="./leg_cereales/leg_cereales.html" class="filter-btn">Produits Agricoles</a>
+                        <a href="./vestimentaire/vestimentaire.html" class="filter-btn">Vestimentaire</a>
+                        <a href="Art_decoration/decore.html" class="filter-btn">Art et Décoration</a>
+                        <a href="Cosmétique/cosmetique.html" class="filter-btn">Cosmétiques</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="product-main">
+        <section aria-labelledby="top-produits" class="product-list-section">
+            <div class="u-container">
+                <div class="section-header">
+                    <h2 class="section-header__title" id="top-produits">Top Produits Agricoles</h2>
+                    <a href="#" class="section-header__see-all-link">Voir Plus</a>
+                </div>
+
+                <div class="product-grid">
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <span class="product-card__badge product-card__badge--discount">-15%</span>
+                            <img src="../images/sac_mil.png" alt="Sacs de Mil">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter au panier</button>
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Mil / Sorgho Rouge</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">50.000 FCFA / Sac</span>
+                                <span class="product-card__price--old">58.800 FCFA / Sac</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <span class="product-card__badge product-card__badge--discount">-10%</span>
+                            <img src="../images/niebe_blanc.jpg" alt="Sacs de Niébé (Haricot)">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter au panier</button>
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Niébé Blanc (Haricot)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">67.500 FCFA / Sac</span>
+                                <span class="product-card__price--old">75.000 FCFA / Sac</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="../images/mangue_amelie.jpg" alt="Caisses de Mangues fraîches">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter au panier</button>
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Mangues Amélie (Caisses)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">8.500 FCFA / Caisse</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="../images/boeuf.jpeg" alt="Viande de Bœuf (Vente en gros)">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter au panier</button>
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Bœuf de Boucherie (Au kg)</h3>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">3.200 FCFA / Kg</span>
+                            </div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="recommendations" class="product-list-section just-for-you">
+            <div class="u-container">
+                <div class="section-header">
+                    <h2 class="section-header__title" id="recommendations">Recommendations Artisanales</h2>
+                    <a href="#" class="section-header__see-all-link">Voir Plus</a>
+                </div>
+
+                <div class="product-grid">
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="../images/vase_deco.jpg" alt="Pot de fleur décoratif">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter au panier</button>
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Pot de fleur décoratif</h3>
+                            <div class="product-card__price"><span class="product-card__price--current">5.500
+                                    FCFA</span></div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="../images/croix_agadez.jpg" alt="Croix d'Agadez en argent">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter au panier</button>
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Croix d'Agadez en Argent pur</h3>
+                            <div class="product-card__price"><span class="product-card__price--current">56.000
+                                    FCFA</span></div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="../images/calebasse_tapi.jpg" alt="Calebasse et tapis artistique">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter au panier</button>
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Calebasse et Tapis Artistique</h3>
+                            <div class="product-card__price"><span class="product-card__price--current">7.500
+                                    FCFA</span></div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="../images/statue_deco.jpg" alt="Statue décorative">
+                            <button class="product-card__add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                                Ajouter au panier</button>
+                        </div>
+
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Statue décorative</h3>
+                            <div class="product-card__price"><span class="product-card__price--current">2.000
+                                    FCFA</span></div>
+                            <div class="product-card__rating">★★★★★ (65)</div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="u-container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Gidan Kasuwa</h3>
+                    <p>Votre marché en ligne pour des produits authentiques, durables et élégants, sélectionnés avec
+                        soin pour leur qualité et leur respect de l'environnement.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-links__link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-links__link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-links__link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-links__link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Liens Rapides</h3>
+                    <ul class="footer__link-list">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="categories.html">Catégories</a></li>
+                        <li><a href="nouveautes.html">Nouveautés</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Informations</h3>
+                    <ul class="footer__link-list">
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="livraison.html">Livraison</a></li>
+                        <li><a href="retours.html">Retours</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> Gidan-kasuwa@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +227 90 00 00 90</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cite de l'innovation, sadore </p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Gidan Kasuwa - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
