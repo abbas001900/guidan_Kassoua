@@ -27,6 +27,7 @@
 body {
     background-color: var(--light);
     color: var(--dark);
+    background-color: #FFFAED;
 }
 
 /* Conteneur utilitaire pour centrer le contenu */
@@ -40,12 +41,53 @@ body {
     HEADER (NAVIGATION PRINCIPALE)
 -------------------------------------------------- */
 .site-header {
-    background: white;
+    background: #FFFAED;
     box-shadow: var(--box-shadow);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
+
+.site-logo__icon {
+    font-size: 2rem;
+    color: var(--primary);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+.site-logo__icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+    border-radius: 50%;    
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .header__content {
     display: flex;
@@ -54,7 +96,7 @@ body {
     padding: 1.5rem 0;
 }
 
-/* Logo */
+
 .site-logo {
     display: flex;
     align-items: center;
@@ -79,6 +121,9 @@ body {
     color: var(--gray);
     margin-top: 2px;
 }
+
+
+
 
 /* Navigation principale */
 .main-nav ul {
@@ -173,7 +218,7 @@ body {
     SECTION FILTRES (HAUT DE PAGE)
 -------------------------------------------------- */
 .filter-section {
-    background-color: white;
+    background-color: #FFFAED;
     padding: 2rem 0 1.5rem;
     border-bottom: 1px solid var(--gray-light);
 }
