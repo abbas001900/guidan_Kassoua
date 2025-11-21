@@ -1,11 +1,15 @@
 /* --------------------------------------------------
    RESET & BASE
 -------------------------------------------------- */
-* {
+•⁠  ⁠{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
 }
 
 :root {
@@ -22,11 +26,6 @@
     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-}
-
-body {
-    background-color: #f5f5f5;
-    /* padding: 20px; */
 }
 
 /* --------------------------------------------------
@@ -56,7 +55,7 @@ nav ul {
     gap: 2.2rem;
 }
 
-.sublink {
+.sublink{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.95rem;
@@ -220,256 +219,6 @@ nav ul {
         grid-template-columns: 1fr;
     }
 }
-
-/* --------------------------------------------------
-   PARTIE RECHERCHE 
--------------------------------------------------- */
-#rechercheNotifications {
-    width: fit-content;
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
-    padding: 2rem 1rem;
-    border-radius: 0.75rem;
-}
-
-#rechercheNotifications fieldset {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 1.3rem;
-}
-
-.rechercheNotificationButton {
-    padding: 0.5rem;
-    width: 10rem;
-    border: 1px solid gray;
-    border-radius: 0.5rem;
-}
-
-.rechercheNotificationSubmit {
-    color: white;
-    background-color: blue;
-    padding: 0.5rem 1rem;
-}
-
-
-
-
-
-/* popup */
-
-
-.PopUp {
-    width: 100%;
-    height: 120vh;
-    top: 0;
-    backdrop-filter: blur(3px);
-    background-color: #363d3d2d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* left: -3500px; */
-}
-
-#PopUp:target {
-    left: 0;
-}
-
-.container1 {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    background-color: white;
-    border-radius: 2rem;
-    position: relative;
-}
-
-/* --- Thumbnails --- */
-.thumbnails {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.thumbnails img {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    cursor: pointer;
-}
-
-/* --- Main Image --- */
-.main-image {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.croussOut {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    transition: 0.5s ease all;
-}
-
-.croussOut:hover {
-    transform: scale(1.05);
-    background-color: #e80d0d;
-}
-
-.croussOut:hover a {
-    color: white;;
-}
-
-.croussOut a {
-    text-decoration: none;
-    color: red;
-}
-
-.main-image img {
-    width: 450px;
-    border-radius: 10px;
-}
-
-/* --- Product Info --- */
-.product-info {
-    max-width: 400px;
-}
-
-.rating {
-    margin: 10px 0;
-    font-size: 15px;
-}
-
-.stock {
-    color: #1ca000;
-    font-weight: bold;
-}
-
-.price {
-    font-size: 28px;
-    margin: 5px 0 15px;
-}
-
-.description {
-    line-height: 1.4;
-    margin-bottom: 25px;
-}
-
-/* --- Colors & Sizes --- */
-.selectors span {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 6px;
-}
-
-.colors {
-    margin-bottom: 20px;
-}
-
-.color-btn {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    margin-right: 8px;
-    border: 2px solid #ccc;
-    cursor: pointer;
-}
-
-.color-btn.active {
-    background: #000;
-}
-
-.color-btn.gray {
-    background: #e0e0e0;
-}
-
-.sizes button {
-    margin-right: 8px;
-    padding: 6px 12px;
-    border: 1px solid #aaa;
-    background: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.sizes .active {
-    background: #ff3d3d;
-    color: white;
-    border-color: #ff3d3d;
-}
-
-/* --- Quantity + Buy buttons --- */
-.quantity {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 25px 0;
-}
-
-.quantity button {
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    cursor: pointer;
-    background: white;
-}
-
-.buy {
-    background: #ff3d3d;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-}
-
-.heart {
-    font-size: 20px;
-    padding: 8px 12px;
-}
-
-/* --- Delivery Boxes --- */
-.delivery .item {
-    border: 1px solid #ddd;
-    padding: 12px;
-    border-radius: 10px;
-    margin-bottom: 12px;
-}
-
-.delivery p {
-    margin: 4px 0 0;
-    font-size: 14px;
-    color: #666;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
