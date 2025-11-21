@@ -41,7 +41,7 @@ body {
     HEADER (NAVIGATION PRINCIPALE)
 -------------------------------------------------- */
 .site-header {
-    background: white;
+    background: #FFFAED;
     box-shadow: var(--box-shadow);
     position: sticky;
     top: 0;
@@ -49,6 +49,19 @@ body {
 }
 
 
+.site-logo__icon {
+    font-size: 2rem;
+    color: var(--primary);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+.site-logo__icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+    border-radius: 50%;    
+}   
 
 
 

@@ -74,11 +74,8 @@ body {
     width: 100%;
     object-fit: contain; 
     border-radius: 50%;    
-    img.tinted {
-  
-}
-  
 }   
+
 .site-logo__text h1 {
     font-size: 1.8rem;
     font-weight: 700;
