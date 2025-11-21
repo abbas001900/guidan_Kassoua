@@ -28,6 +28,7 @@ body {
     color: var(--dark);
     background-color: #fefefe;
     overflow-x: hidden;
+    background-color: #FFFAED;
 }
 
 /* Classe utilitaire pour le conteneur */
@@ -39,7 +40,7 @@ body {
 
 /* --- EN-TÊTE MODERNE (HEADER) --- */
 .site-header {
-    background: white;
+    background: #FFFAED;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     position: sticky;
     top: 0;
@@ -64,8 +65,20 @@ body {
 .site-logo__icon {
     font-size: 2rem;
     color: var(--primary);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
 }
-
+.site-logo__icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+    border-radius: 50%;    
+    img.tinted {
+  
+}
+  
+}   
 .site-logo__text h1 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -171,9 +184,6 @@ body {
 
 /* --- BANNIÈRE HÉROÏQUE (HERO) --- */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('https://images.unsplash.com/photo-1556909114-4d0d853e5e25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center;
-    background-size: cover;
     height: 70vh;
     display: flex;
     align-items: center;
@@ -181,6 +191,10 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
+    background-image: url(Gidan-mou.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-section::before {
@@ -428,7 +442,7 @@ section {
 
 /* --- À PROPOS --- */
 .about-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #FFFAED 0%, #FFFAED 100%);
 }
 
 .about-section__content {
@@ -481,7 +495,7 @@ section {
 .about-section__image {
     height: 450px;
     border-radius: var(--border-radius);
-    background: url('https://images.unsplash.com/photo-1556909114-4d0d853e5e25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center;
+    background: url('Gidan-kasuwa.png') no-repeat center center;
     background-size: cover;
     box-shadow: var(--box-shadow);
 }
@@ -520,10 +534,11 @@ section {
     border: none;
     border-radius: 50px 0 0 50px;
     font-size: 1rem;
+    outline: none;
 }
 
 .newsletter-form__submit-btn {
-    background: var(--secondary);
+    background: #3a3937;
     color: white;
     border: none;
     padding: 0 2rem;

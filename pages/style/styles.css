@@ -27,6 +27,7 @@
 body {
     background-color: var(--light);
     color: var(--dark);
+    background-color: #FFFAED;
 }
 
 /* Conteneur utilitaire pour centrer le contenu */
@@ -47,6 +48,34 @@ body {
     z-index: 1000;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header__content {
     display: flex;
     justify-content: space-between;
@@ -54,7 +83,7 @@ body {
     padding: 1.5rem 0;
 }
 
-/* Logo */
+
 .site-logo {
     display: flex;
     align-items: center;
@@ -79,6 +108,9 @@ body {
     color: var(--gray);
     margin-top: 2px;
 }
+
+
+
 
 /* Navigation principale */
 .main-nav ul {
@@ -173,7 +205,7 @@ body {
     SECTION FILTRES (HAUT DE PAGE)
 -------------------------------------------------- */
 .filter-section {
-    background-color: white;
+    background-color: #FFFAED;
     padding: 2rem 0 1.5rem;
     border-bottom: 1px solid var(--gray-light);
 }
