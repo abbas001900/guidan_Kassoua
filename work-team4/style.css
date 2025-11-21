@@ -1,189 +1,110 @@
-/* --- VARIABLES DE COULEURS B2B --- */
+/* --- VARIABLES DE COULEURS MINIMALISTES --- */
 :root {
-    --bleu-nuit: #0E1E40; /* Couleur principale de la marque (Professionnel/Sobriété) */
-    --or-pale: #B8860B;   /* Couleur d'accentuation (Luxe/Élégance) */
-    --blanc-casse: #F8F8F8; /* Fond clair */
-    --gris-bordure: #E0E0E0;
+    --couleur-fond: #fffAE2;   /* Blanc Sale/Crème */
+    --couleur-accent: #00A36C; /* Vert Émeraude */
+    --couleur-texte: #333333;  /* Noir profond */
+    --gris-bordure: #DEDEDE;
 }
 
-/* --- STYLES GÉNÉRAUX --- */
+/* --- STYLES GÉNÉRAUX et RESET --- */
 body {
-    font-family: 'Arial', sans-serif; /* Police de base professionnelle */
+    font-family: sans-serif;
     margin: 0;
-    background-color: var(--blanc-casse);
-    color: #333;
+    padding: 0;
+    background-color: var(--couleur-fond); /* Le corps est Crème */
+    color: var(--couleur-texte);
 }
 
-/* --- HEADER --- */
-.main-header {
+/* --- CONTENEUR-main (La structure à deux colonnes) --- */
+.auth-page-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.logo h1 {
-    color: var(--bleu-nuit);
-    font-size: 1.8em;
-    margin: 0;
-}
-
-.slogan-header {
-    display: block;
-    font-size: 0.75em;
-    color: var(--or-pale);
-    margin-top: -5px;
-}
-
-.header-nav a {
-    color: var(--bleu-nuit);
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 8px 15px;
-    border: 1px solid transparent;
-    transition: all 0.3s;
-}
-
-.cta-link { 
-    border-color: var(--bleu-nuit);
-    font-weight: bold;
-}
-
-.cta-link:hover {
-    background-color: var(--bleu-nuit);
-    color: white;
-}
-
-/* --- MAIN / ARRIÈRE-PLAN AVEC IMAGE --- */
-.main-content {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 0;
     justify-content: center;
-    padding: 40px 20px;
-    background-size: cover;
-    background-position: center;
+    align-items: center;
 }
 
-.auth-background {
-    /* SIMULATION DE L'IMAGE DE FOND avec un filtre sombre pour que le texte ressorte */
-    background-image: linear-gradient(rgba(14, 30, 64, 0.7), rgba(14, 30, 64, 0.7)), url('images/bg-artisanat.jpg'); 
-    /* !!! une image de qualité nommée 'bg-artisanat.jpg' !!! */
-    background-attachment: fixed; /* Rendre l'image fixe pour un meilleur effet */
+
+
+/* --- COLONNE 2 : FORMULAIRE (2/3 de la largeur) --- */
+.auth-form-col {
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-.main-ecrit {
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
-    max-width: 500px;
-}
-
-.main-ecrit h2 {
-    font-size: 2.2em;
-    color: var(--or-pale);
-}
-
-/* --- FORMULAIRE CENTRÉ --- */
 .auth-form-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Ombre élégante */
-    max-width: 400px;
+    max-width: 450px;
     width: 100%;
+    padding: 40px;
+    background-color: white; /* Le formulaire est Blanc pur */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Ombre très légère */
 }
 
-.auth-form h3 {
-    text-align: center;
-    color: var(--bleu-nuit);
+.auth-form-box h2 {
+    color: var(--couleur-accent);
     margin-top: 0;
 }
 
-.auth-form input, .auth-form select, .btn-b2b {
+/* --- STYLES DES CHAMPS ET BOUTONS --- */
+.auth-form input {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid var(--gris-bordure);
-    border-radius: 4px;
-    box-sizing: border-box; /* Assure que padding n'augmente pas la largeur */
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.auth-form select {
-    appearance: none; /* Look plus propre pour le B2B */
-}
-
-.btn-b2b {
-    background-color: var(--bleu-nuit);
+.btn-cta-green {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--couleur-accent); /* Le bouton est Vert Émeraude */
     color: white;
+    border: none;
+    border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.btn-b2b:hover {
-    background-color: var(--or-pale);
+.btn-cta-green:hover {
+    background-color: var(--couleur-texte); /* Passe au Noir au survol pour un effet élégant */
+}
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: var(--couleur-texte);
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .auth-switch a {
-    color: var(--or-pale);
+    color: var(--couleur-accent);
     text-decoration: none;
     font-weight: bold;
 }
 
-/* --- FOOTER (Uniforme) --- */
-footer {
-    background-color: var(--bleu-nuit);
-    color: white;
-}
-
-.footer-line-one {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 15px 30px; 
-    padding: 20px 5%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-line-one a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: color 0.3s;
-}
-
-.footer-line-one a:hover {
-    color: var(--or-pale);
-}
-
-.footer-barre {
-    text-align: center;
-    padding: 10px 5%;
-    font-size: 0.8em;
-}
-
-/* --- RESPONSIVE DESIGN (Crucial pour le hackathon) --- */
-@media (max-width: 650px) {
-    .main-header {
-        flex-direction: column;
-        text-align: center;
+/* --- RESPONSIVE DESIGN (Les colonnes doivent s'empiler sur mobile) --- */
+@media (max-width: 768px) {
+    
+   /* Les colonnes reprennent 100% de la largeur en mode empilé */
+     
+    .auth-form-col {
+        width: 100%; 
     }
     
-    .header-nav {
-        margin-top: 10px;
-    }
-    
-    .header-nav a {
-        margin: 0 5px;
-    }
-    
-    .footer-line-one {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    .auth-form-col {
+        padding: 40px 20px;
     }
 }

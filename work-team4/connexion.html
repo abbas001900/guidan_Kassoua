@@ -3,52 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion Partenaires | Gidan Kasuwa</title>
+    <title>Connexion Client | Gidan Kasuwa</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-
-    <header class="main-header">
-        <div class="logo">
-            <h1>Gidan Kasuwa</h1>
-            <span class="slogan-header">Le Marché de l'Excellence Nigérienne.</span>
-        </div>
-        <nav class="header-nav">
-            <a href="#" class="traducteur">🌍 EN / FR</a>
-            <a href="inscription.html" class="cta-link">Inscription Partenaire</a> 
-        </nav>
-    </header>
-
-    <main class="main-content auth-background">
-        <div class="main-ecrit">
-            <h2>Espace Partenaires B2B</h2>
-            <p>Veuillez vous connecter pour accéder à votre catalogue de produits de gros et aux fiches techniques certifiées.</p>
+    
+    <main class="auth-page-container"> 
+        
+        <div class="auth-form-col">
+            <div class="auth-form-box">
+                <h2>Connexion Client</h2>
+                <p>Retrouvez vos commandes et vos produits favoris.</p>
+                
+                <form action="#" method="POST" class="auth-form">
+                    <input type="email" placeholder="Adresse Email" required>
+                    <input type="password" placeholder="Mot de Passe" required>
+                    
+                    <a href="#" class="forgot-link">Mot de passe oublié ?</a>
+                    <button type="submit" class="btn-cta-green">Me Connecter</button>
+                </form>
+                
+                <p class="auth-switch">Nouveau client ? <a href="inscription.html">Créer un compte</a></p>
+            </div>
         </div>
         
-        <div class="auth-form-box">
-            <h3>Connexion Professionnelle</h3>
-            <form action="#" method="POST" class="auth-form">
-               <input type="text" placeholder="Identifiant Partenaire" required>
-                <input type="password" placeholder="Mot de Passe" required>
-                <button type="submit" class="btn-b2b">Accéder à l'Espace Partenaire</button>
-            </form>
-            <p class="auth-switch">Pas encore partenaire ? <a href="inscription.html">Inscrivez-vous ici</a></p>
-        </div>
     </main>
+    
 
-    <footer>
-        <div class="footer-line-one">
-            <a href="#">À Propos de Nous</a>
-            <a href="#">Déclaration Qualité</a>
-            <a href="#">Accord d'Utilisateur</a>
-            <a href="#">Politique de Confidentialité</a>
-            <a href="#">Contactez-Nous</a>
-            <a href="#">Produits Rapides</a>
-        </div>
-        <div class="footer-barre">
-            <p>&copy; 2025 Gidan Kasuwa. Tous droits réservés.</p>
-            <p>Conçu avec HTML & CSS pour le Hackathon.</p>
-        </div>
-    </footer>
 </body>
 </html>
