@@ -21,52 +21,54 @@
 
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="../../index.html" class="main-nav__link">Accueil</a></li> <li><a href="../index.html" class="main-nav__link main-nav__link--active">Produits</a></li> <li><a href="nouveautes.html" class="main-nav__link">Nouveautés</a></li>
-                        <li><a href="apropos.html" class="main-nav__link">À propos</a></li>
+                        <li><a href="../../accueil.html" class="main-nav__link">Accueil</a></li>
+                        <li><a href="../index.html" class="main-nav__link main-nav__link--active">Produits</a></li>
+                        <li><a href="../../nouveautes.html" class="main-nav__link">Nouveautés</a></li>
+                        <li><a href="../../apropos.html" class="main-nav__link">À propos</a></li>
                     </ul>
                 </nav>
 
-                <div class="header__action-buttons"> <button class="action-btn" aria-label="Notifications"> <i class="fas fa-bell"></i>
-                        <span class="action-btn__badge">3</span> </button>
-                    <button class="action-btn" aria-label="Panier"> <i class="fas fa-shopping-cart"></i>
-                    </button>
-                    <button class="action-btn action-btn--login" aria-label="Connexion/Compte utilisateur"> <i class="fas fa-user"></i>
+                <div class="header__action-buttons">
+                    <a href="../../notification.html" class="action-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="action-btn__badge">3</span>
+                    </a>
+                    <a href="../../panier.html" class="action-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="../../index.html" class="action-btn--login">
+                        <i class="fas fa-user"></i>
                         Connexion
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="filter-section" aria-labelledby="main-product-title"> <div class="u-container"> <h2 id="main-product-title" class="filter-section__title">Nos Produits</h2> <div class="filter-options">
+    <section class="filter-section" aria-labelledby="main-product-title"> <div class="u-container"> <h2 id="main-product-title" class="filter-section__title">Arts & Décoration</h2> <div class="filter-options">
                 <div class="search-bar">
                     <input type="search" placeholder="Rechercher un produit..." aria-label="Rechercher un produit">
                     <button class="search-bar__btn" aria-label="Lancer la recherche"><i class="fas fa-search"></i></button> </div>
                 <nav class="category-filters">
                     <a href="../index.html" class="filter-btn">Tous</a>
                     <a href="../leg_cereales/leg_cereales.html" class="filter-btn">Produits Agricoles</a>
-                    <a href="vestimentaire.html" class="filter-btn filter-btn--active">Vestimentaire</a> <a href="../Art_decoration/decore.html" class="filter-btn">Art et Décoration</a>
+                    <a href="../vestimentaire/vestimentaire.html" class="filter-btn">Vestimentaire</a>
+                    <a href="decore.html" class="filter-btn filter-btn--active">Art et Décoration</a>
                     <a href="../Cosmétique/cosmetique.html" class="filter-btn">Cosmétiques</a>
                 </nav>
             </div>
         </div>
     </section>
 
-    <nav class="subnav-section" aria-label="Sous-catégories Vestimentaires"> <div class="sub-nav u-container"> <ul class="sub-nav__list"> <li><a href="habit/habit.html" class="sub-nav__link sub-nav__link--active">Habits</a></li> <li><a href="accessoir/accessoir.html" class="sub-nav__link">Accessoires</a></li>
-                <li><a href="chaussure/chaussure.html" class="sub-nav__link">Chaussures</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <main class="u-container product-main"> <section aria-labelledby="top-produits" class="product-list-section"> <div class="section-header"> <h2 id="top-produits" class="section-header__title">Top Produits</h2> <a href="#" class="section-header__see-all-link">Voir Plus</a> </div>
 
             <ul class="product-grid"> <li class="product-card">
                     <article> 
-                        <figure class="product-card__image"> <span class="product-card__badge">-38%</span> <img src="images-habits/img3.jpeg" alt="Chaussures en cuir haute qualité, faites main">
+                        <figure class="product-card__image"> <span class="product-card__badge">-38%</span> <img src="Sandal.jpeg" alt="Chaussures en cuir haute qualité, faites main">
                             <button class="product-card__add-to-cart-btn" aria-label="Ajouter Chaussures en cuir de haute Qualité au panier"> <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
                             </button>
                         </figure>
-                        <div class="product-card__info"> <h3 class="product-card__name">Paire en cuir de haute Qualité</h3> <div class="product-card__price"> <span class="product-card__price--current">960 FCFA</span> <span class="product-card__price--old">1160 FCFA</span> </div>
+                        <div class="product-card__info"> <h3 class="product-card__name">Paire en cuir de haute Qualité</h3> <div class="product-card__price"> <span class="product-card__price--current">7000 FCFA</span> <span class="product-card__price--old">10.000FCFA</span> </div>
                         </div>
                     </article>
                 </li>
@@ -75,7 +77,7 @@
                     <article>
                         <figure class="product-card__image">
                             <span class="product-card__badge">-36%</span>
-                            <img src="images-habits/img1.jpeg" alt="Tissu Pagne traditionnel à motifs colorés">
+                            <img src="img-1.jpg" alt="Tissu Pagne traditionnel à motifs colorés">
                             <button class="product-card__add-to-cart-btn" aria-label="Ajouter Pagne Traditionnel au panier">
                                 <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
                             </button>
@@ -83,8 +85,8 @@
                         <div class="product-card__info">
                             <h3 class="product-card__name">Pagne Traditionnel</h3>
                             <div class="product-card__price">
-                                <span class="product-card__price--current">960 FCFA</span>
-                                <span class="product-card__price--old">1160 FCFA</span>
+                                <span class="product-card__price--current">8000 FCFA</span>
+                                <span class="product-card__price--old">11.000 FCFA</span>
                             </div>
                             <div class="product-card__rating" aria-label="Évaluation de 5 étoiles sur 5, basée sur 65 avis">★★★★★ (65)</div> </div>
                     </article>
@@ -93,7 +95,7 @@
                 <li class="product-card">
                     <article>
                         <figure class="product-card__image">
-                            <img src="images-habits/img10.jpeg" alt="Bague touareg en argent pur">
+                            <img src="Situation-de-lartisanat-au-Niger-en-2022-24-08-22 .jpg" alt="Bague touareg en argent pur">
                             <button class="product-card__add-to-cart-btn" aria-label="Ajouter Bague en Argent pur au panier">
                                 <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
                             </button>
@@ -101,7 +103,7 @@
                         <div class="product-card__info">
                             <h3 class="product-card__name">Bague en Argent pur</h3>
                             <div class="product-card__price">
-                                <span class="product-card__price--current">1960 FCFA</span>
+                                <span class="product-card__price--current">5000 FCFA/1</span>
                             </div>
                         </div>
                     </article>
@@ -110,7 +112,7 @@
                 <li class="product-card">
                     <article>
                         <figure class="product-card__image">
-                            <img src="images-habits/img12.jpeg" alt="Petit tabouret artisanal en cuir 100%">
+                            <img src="images (1).jpeg" alt="Petit tabouret artisanal en cuir 100%">
                             <button class="product-card__add-to-cart-btn" aria-label="Ajouter Tabouret en Cuir 100% au panier">
                                 <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
                             </button>
@@ -118,7 +120,7 @@
                         <div class="product-card__info">
                             <h3 class="product-card__name">Tabouret en Cuir 100%</h3>
                             <div class="product-card__price">
-                                <span class="product-card__price--current">1160 FCFA</span>
+                                <span class="product-card__price--current">20.000 FCFA</span>
                             </div>
                             <div class="product-card__rating" aria-label="Évaluation de 5 étoiles sur 5, basée sur 65 avis">★★★★★ (65)</div>
                         </div>
@@ -132,14 +134,14 @@
             <ul class="product-grid"> <li class="product-card">
                     <article>
                         <figure class="product-card__image">
-                            <img src="images-habits/img16.jpeg" alt="Pot de fleur en terre cuite pour décoration">
+                            <img src="2.-Des-vases-pour-decoration-en-vente-sur-une-rue-de-Niamey_Photo-ISSA.jpg" alt="Pot de fleur en terre cuite pour décoration">
                             <button class="product-card__add-to-cart-btn" aria-label="Ajouter Pot de fleur pour décorations au panier">
                                 <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
                             </button>
                         </figure>
                         <div class="product-card__info">
                             <h3 class="product-card__name">Pot de fleur pour décorations</h3>
-                            <div class="product-card__price"><span class="product-card__price--current">550 FCFA</span></div>
+                            <div class="product-card__price"><span class="product-card__price--current">10.000 FCFA/1</span></div>
                         </div>
                     </article>
                 </li>
@@ -147,14 +149,14 @@
                 <li class="product-card">
                     <article>
                         <figure class="product-card__image">
-                            <img src="images-habits/img13.jpeg" alt="Croix d'Agadez en argent, bijou culturel">
+                            <img src="Une-vue-des-21-premieres-croix-du-Niger.jpg" alt="Croix d'Agadez en argent, bijou culturel">
                             <button class="product-card__add-to-cart-btn" aria-label="Ajouter Croix d'Agadez en Argent pur au panier">
                                 <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
                             </button>
                         </figure>
                         <div class="product-card__info">
                             <h3 class="product-card__name">Croix d'Agadez en Argent pur</h3>
-                            <div class="product-card__price"><span class="product-card__price--current">560 FCFA</span></div>
+                            <div class="product-card__price"><span class="product-card__price--current">5000 FCFA/1</span></div>
                             <div class="product-card__rating" aria-label="Évaluation de 5 étoiles sur 5, basée sur 65 avis">★★★★★ (65)</div>
                         </div>
                     </article>
@@ -163,14 +165,14 @@
                 <li class="product-card">
                     <article>
                         <figure class="product-card__image">
-                            <img src="images-habits/img20.jpeg" alt="Calebasse et tapis artistique nigérien">
+                            <img src="artisanat.jpg" alt="Calebasse et tapis artistique nigérien">
                             <button class="product-card__add-to-cart-btn" aria-label="Ajouter Calebasse et Tapis Artistique au panier">
                                 <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
                             </button>
                         </figure>
                         <div class="product-card__info">
                             <h3 class="product-card__name">Calebasse et Tapis Artistique</h3>
-                            <div class="product-card__price"><span class="product-card__price--current">750 FCFA</span></div>
+                            <div class="product-card__price"><span class="product-card__price--current">6000 FCFA</span></div>
                         </div>
                     </article>
                 </li>
@@ -178,14 +180,14 @@
                 <li class="product-card">
                     <article>
                         <figure class="product-card__image">
-                            <img src="images-habits/img6.jpeg" alt="Statue décorative africaine en bois">
+                            <img src="img-6.jpg" alt="Statue décorative africaine en bois">
                             <button class="product-card__add-to-cart-btn" aria-label="Ajouter Statue décorative au panier">
                                 <i class="fa-solid fa-cart-shopping"></i> Ajouter au Panier
                             </button>
                         </figure>
                         <div class="product-card__info">
                             <h3 class="product-card__name">Statue décorative</h3>
-                            <div class="product-card__price"><span class="product-card__price--current">200 FCFA</span></div>
+                            <div class="product-card__price"><span class="product-card__price--current">15.000 FCFA</span></div>
                             <div class="product-card__rating" aria-label="Évaluation de 5 étoiles sur 5, basée sur 65 avis">★★★★★ (65)</div>
                         </div>
                     </article>
