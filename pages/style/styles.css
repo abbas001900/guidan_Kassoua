@@ -264,10 +264,6 @@ body {
     padding: 0.8rem 0;
 }
 
-.sub-nav {
-    /* La balise <nav> est déjà incluse dans le HTML */
-}
-
 .sub-nav__list {
     display: flex;
     justify-content: center;
